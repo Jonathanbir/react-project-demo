@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:/recommended"
+    // "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/prop-types": 0,
+    "no-console": 0,
+    "func-names": 0,
+    "arrow-body-style": ["error", "always"],
+    // "camelcase": ["warn", { "properties": "always" }],
+    "no-unused-vars": "warn",
+    "semi": ["warn", "never"], //分號
+    "quotes": ["warn", "single"], //雙引號 double,單引號 single,backtick
+    "react/function-component-definition": [
+      "off",
+      {
+        "namedComponents": "function-expression",
+        "unnamedComponents": "function-expression"
+      }
+    ],
+    "object-curly-newline": ["error", "never"],
+    "comma-dangle": ["error", "never"]
+  }
+}
